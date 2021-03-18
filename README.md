@@ -21,6 +21,11 @@
 * Visual Studio           - https://visualstudio.microsoft.com/
 * Microsoft SQL Server    - https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 
+## Entity Framework
+https://www.entityframeworktutorial.net/what-is-entityframework.aspx
+
+
+
 ## Creating Database
 On Microsoft SQL Server Management Studio we'll create new database called 'MvcCrud' with a table 'Customer'\
 | Column Name | Data Type |
