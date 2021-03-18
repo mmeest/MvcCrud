@@ -9,6 +9,13 @@
 
 ## Contents
 - [Tools needed](#tools-needed)
+- [Creating Database](#creating-database)
+- [Creating Application](#creating-application)
+- [CRUD Read](#crud-read)
+- [CRUD Create](#crud-create)
+- [CRUD Read II](#crud-read-ii)
+- [CRUD Update](#crud-update)
+- [CRUD Delete](#crud-delete)
 
 ## Tools needed
 * Visual Studio           - https://visualstudio.microsoft.com/
