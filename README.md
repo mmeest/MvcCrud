@@ -33,8 +33,9 @@ We'll name the entity connection to 'DbModels' and select the 'Customer' table.
 Next we add 'CustomerController' controller with 'MVC 5 Controller with read/write actions' to Controllers.\
 In there are all our CRUD methods.
 
-<p align="center"><img src="pic/list.png" width="300px"></p>
+
 ## CRUD Read
+<p align="center"><img src="pic/list.png" width="300px"></p>
 In 'CustomerController' we'll set our read method.\
 In namespace we add 'Models'
 ```
@@ -55,8 +56,9 @@ public ActionResult Index()
 
 We'll right click on index and add view with 'List' template with 'Customer' model.
 
-<p align="center"><img src="pic/create.png" width="300px"></p>
+
 ## CRUD Create
+<p align="center"><img src="pic/create.png" width="300px"></p>
 We right click on Create GET action and add view with 'Create' template and 'Customer' model.
 
 Next we modify Create POST action as follows
@@ -98,8 +100,9 @@ public ActionResult Details(int id)
 
 We'll right click on the details action and add new view with 'Details' template and 'Customer' class
 
-<p align="center"><img src="pic/edit.png" width="300px"></p>
+
 ## CRUD Update
+<p align="center"><img src="pic/edit.png" width="300px"></p>
 First we'll right click on the Edit GET action and add view with 'Edit' template and 'Customer' class and modify class
 ```
 // GET: Customer/Edit/5
@@ -136,8 +139,9 @@ public ActionResult Edit(int id, Customer customer)
 }
 ```
 
-<p align="center"><img src="pic/delete.png" width="300px"></p>
+
 ## CRUD Delete
+<p align="center"><img src="pic/delete.png" width="300px"></p>
 We modify Delete GET action as follows
 ```
 // GET: Customer/Delete/5
