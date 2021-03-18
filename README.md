@@ -9,6 +9,7 @@
 
 ## Contents
 - [Tools needed](#tools-needed)
+- [Entity Framework](#entity-framework)
 - [Creating Database](#creating-database)
 - [Creating Application](#creating-application)
 - [CRUD Read](#crud-read)
@@ -25,7 +26,7 @@
 https://www.entityframeworktutorial.net/what-is-entityframework.aspx
 
 Entity Framework basic workflow
-<p align="center"><img src="https://user-images.githubusercontent.com/34022590/111676093-7cde2480-8826-11eb-8bd7-af105b2b155e.png" width="300px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/34022590/111676093-7cde2480-8826-11eb-8bd7-af105b2b155e.png" width="450px"></p>
 
 1. First of all, you need to define your model. Defining the model includes defining your domain classes, context class derived from DbContext, and configurations (if any). EF will perform CRUD operations based on your model.
 2. To insert data, add a domain object to a context and call the SaveChanges() method. EF API will build an appropriate INSERT command and execute it to the database.
