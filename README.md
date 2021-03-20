@@ -7,7 +7,7 @@
     <p>ASP.NET CRUD operations with Entity framework</p>
 </h3>
 
-## Contents
+### Contents
 - [Tools needed](#tools-needed)
 - [Entity Framework](#entity-framework)
 - [Creating Database](#creating-database)
@@ -18,11 +18,15 @@
 - [CRUD Update](#crud-update)
 - [CRUD Delete](#crud-delete)
 
-## Tools needed
+<hr>
+
+### Tools needed
 * Visual Studio           - https://visualstudio.microsoft.com/
 * Microsoft SQL Server    - https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 
-## Entity Framework
+<hr>
+
+### Entity Framework
 https://www.entityframeworktutorial.net/what-is-entityframework.aspx
 
 Entity Framework basic workflow
@@ -33,8 +37,9 @@ Entity Framework basic workflow
 3. To read data, execute the LINQ-to-Entities query in your preferred language (C#/VB.NET). EF API will convert this query into SQL query for the underlying relational database and execute it. The result will be transformed into domain (entity) objects and displayed on the UI.
 4. To edit or delete data, update or remove entity objects from a context and call the SaveChanges() method. EF API will build the appropriate UPDATE or DELETE command and execute it to the database.
 
+<hr>
 
-## Creating Database
+### Creating Database
 On Microsoft SQL Server Management Studio we'll create new database called 'MvcCrud' with a table 'Customer'\
 | Column Name | Data Type |
 |-|-|
@@ -53,8 +58,9 @@ We'll name the entity connection to 'DbModels' and select the 'Customer' table.
 Next we add 'CustomerController' controller with 'MVC 5 Controller with read/write actions' to Controllers.\
 In there are all our CRUD methods.
 
+<hr>
 
-## CRUD Read
+### CRUD Read
 <p align="center"><img src="pic/list.png" width="300px"></p>
 In 'CustomerController' we'll set our read method.\
 In namespace we add 'Models'
@@ -76,8 +82,9 @@ public ActionResult Index()
 
 We'll right click on index and add view with 'List' template with 'Customer' model.
 
+<hr>
 
-## CRUD Create
+### CRUD Create
 <p align="center"><img src="pic/create.png" width="300px"></p>
 We right click on Create GET action and add view with 'Create' template and 'Customer' model.
 
@@ -105,7 +112,9 @@ public ActionResult Create(Customer customer)
 }
 ```
 
-## CRUD Read II
+<hr>
+
+### CRUD Read II
 Next we'll get a customer object details with 'Details' action
 ```
 // GET: Customer/Details/5
@@ -120,8 +129,9 @@ public ActionResult Details(int id)
 
 We'll right click on the details action and add new view with 'Details' template and 'Customer' class
 
+<hr>
 
-## CRUD Update
+### CRUD Update
 <p align="center"><img src="pic/edit.png" width="300px"></p>
 First we'll right click on the Edit GET action and add view with 'Edit' template and 'Customer' class and modify class
 ```
@@ -159,8 +169,9 @@ public ActionResult Edit(int id, Customer customer)
 }
 ```
 
+<hr>
 
-## CRUD Delete
+### CRUD Delete
 <p align="center"><img src="pic/delete.png" width="300px"></p>
 We modify Delete GET action as follows
 ```
